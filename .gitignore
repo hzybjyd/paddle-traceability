@@ -1,0 +1,50 @@
+# 私钥与敏感凭证
+private.key
+*.key
+.env
+.env.*
+
+# 包含真实密码或密钥的配置文件
+conf/sdk.yaml
+backend/conf/sdk.yaml
+contracts/conf/sdk.yaml
+
+# IDE
+.vscode/
+.idea/
+.trae/
+*.swp
+*.swo
+*~
+
+# 依赖与构建产物
+node_modules/
+dist/
+build/
+*.exe
+*.dll
+*.wasm
+
+# Go
+backend/vendor/
+backend/tmp/
+
+# 日志
+*.log
+logs/
+
+# Windows 临时文件
+~$*
+
+# 非项目文档和资源
+image/
+docs/
+*.docx
+*.md
+!README.md
+!USER_GUIDE.md
+!contracts/DEPLOY_GUIDE.md
+
+# 测试脚本
+contracts/backend_check.go
+contracts/backend_test.go
